@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Find Different Game</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+  
+  <div class="container custom-container">
+    <div class="box">
+      <h6 class="score mr-9" id="score">Score: 0</h6>
+    </div>
+ 
+    <div class="row">
+      <div class="col-md-5">
+        <!-- Left side content -->
+        <h2>Left Side</h2>
+        <div class="row" id="leftImagesContainer">
+          <div class="col-sm-2 col-md-3 mb-4">
+            <img src="https://picsum.photos/id/1/200" alt="Random Image 1" class="img-fluid"  id="leftImage1" />
+          </div>
+        </div>
+      </div>
+      <div class="splitter col-md-2">
+
+        <div class="vertical-line"></div>
+      </div>
+      <div class="col-md-5">
+        <!-- Right side content -->
+        <h2>Right Side</h2>
+        <div class="row" id="rightImagesContainer">
+          <div class="col-sm-2 col-md-3 mb-4">
+            <img src="https://picsum.photos/id/1/200" alt="Random Image 3" class="img-fluid" id="rightImage1" />
+          </div>
+          <div class="col-sm-2 col-md-3 mb-4">
+            <img src="https://picsum.photos/id/571/200" alt="Random Image 4" class="img-fluid"  id="rightImage2" onclick="checkSelection('rightImage2')" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

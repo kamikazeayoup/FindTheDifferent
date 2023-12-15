@@ -1,0 +1,73 @@
+
+ 
+ body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	height: 100vh; /* Full viewport height */
+	background-color: #F0DBAF;
+
+
+
+  }
+.vertical-line {
+	border-left: 1px solid #000; /* Change the color by modifying #000 */
+	height: 100%; /* Full height of the column */
+	align-items: center;
+
+	@media (max-width: 767.98px) { /* Apply styles for screens smaller than MD (768px) */
+		border-top: 1px solid #000; /* Add a top border to create a horizontal line */
+		border-left: none; /* Remove the left border */
+		height: auto; /* Allow height to adjust based on content */
+		width: 100%; /* Full width of the row */
+	  }
+
+  }
+  .splitter{
+	display: flex;
+	justify-content: center;
+
+  }
+  .custom-container {
+	margin-left: 5%; /* Adjust the left padding as needed */
+	margin-right: 5%; /* Adjust the right padding as needed */
+  }
+
+ 
+.custom-container #leftImagesContainer{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	max-height: 250px; /* Set a maximum height for vertical scrolling */
+	overflow-y: auto; /* Enable vertical scrolling */
+
+}
+.custom-container #rightImagesContainer{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	max-height: 250px; /* Set a maximum height for vertical scrolling */
+	overflow-y: auto; /* Enable vertical scrolling */
+  
+}
+  .custom-container #leftImagesContainer img{
+	border-radius: 50%;
+	border: 2px solid #B06161; /* Add a solid blue border with 2px width */
+  }
+
+  .custom-container #rightImagesContainer img{
+	border-radius: 50%;
+	border: 2px solid #7ED7C1; /* Add a solid blue border with 2px width */
+  }
+
+
+  .box #score{
+	color: aliceblue;
+	border: 2px solid #7ED7C1;
+	width: 100%;
+	text-align: center;
+	background-color: #000;
+  }
+
+  
